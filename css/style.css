@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: #333;
+    text-align: center;
+    padding: 10px 3px 10px 3px;
+}
+
+nav > a{
+    font-family: 'Saira', sans-serif;
+    text-decoration: none;
+    color: #ddd;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+main{
+    justify-content: center;
+    display: flex;
+    padding-top: 50px;
+    gap: 40px;
+}
+
+footer{
+    background-color: #333;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    position: fixed;
+    padding: 10px 3px 10px 3px;
+    bottom: 0px;
+    color: #ddd;
+}
+
+/* --------------- IDS --------------- */
+#album{
+    width: 500px;
+    height: 500px;
+    border: none;
+    border-radius: 10px;
+}
+
+#direita{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#direita > label{
+    font-size: 1.5rem;
+}
+
+#direita > input{
+    width: 96%;
+    display: inline-block;
+    padding: .5rem;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: .75px solid #333;
+}
+
+#direita > button{
+    border: none;
+    padding: .5rem;
+    cursor: pointer;
+    background-color: #ddd;
+    color: #333;
+    border-radius: 10px;
+    font-family: 'Saira', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+#direita > button:hover{
+    background-color: #bbb;
+}
+
+/* ------------- CLASSES ------------- */
+#columns{
+    margin-top: 50px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(5) 1fr;
+    grid-template-rows: repeat(5) 1fr;
+}
+
+.column{
+    width: 100px;
+    border: 1px solid black;
+}
